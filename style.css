@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  #search-bar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    cursor: pointer;
+    position: relative;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  th::after {
+    content: "▼"; /* 默認降序 */
+    position: absolute;
+    right: 10px;
+    font-size: 12px;
+    opacity: 0.5;
+  }
+  nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  th {
+    cursor: pointer;
+    position: relative;
+  }
+  
+  th[data-order="desc"]::after {
+    content: "▼";
+    position: absolute;
+    right: 8px;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  th[data-order="asc"]::after {
+    content: "▲";
+    position: absolute;
+    right: 8px;
+    font-size: 12px;
+    color: #666;
+  }
+  
+  
+  

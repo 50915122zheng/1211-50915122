@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>空氣品質查詢</title>
+  <link rel="stylesheet" href="air.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">股票資料查詢</a></li>
+        <li><a href="poke.html">國家資料</a></li>
+        <li><a href="air.html">空氣品質查詢</a></li>
+      </ul>
+    </nav>
+    <h1>空氣品質查詢系統</h1>
+  </header>
+  <main>
+    <input type="text" id="search-bar" placeholder="輸入測站名稱或縣市">
+    <table id="air-quality-table">
+      <thead>
+        <tr>
+          <th data-column="SiteName" data-order="asc">測站名稱</th>
+          <th data-column="County" data-order="asc">縣市</th>
+          <th data-column="AQI" data-order="asc">AQI</th>
+          <th data-column="Status" data-order="asc">空氣品質狀態</th>
+          <th data-column="PM2.5" data-order="asc">PM2.5 (μg/m³)</th>
+          <th data-column="PM10" data-order="asc">PM10 (μg/m³)</th>
+          <th data-column="WindSpeed" data-order="asc">風速 (m/sec)</th>
+          <th data-column="PublishTime" data-order="asc">發布時間</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- 空氣品質數據將動態插入 -->
+      </tbody>
+    </table>
+  </main>
+  <script src="air.js"></script>
+</body>
+</html>

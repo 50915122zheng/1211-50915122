@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Countries API</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background-color: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      cursor: pointer;
+      background-color: #f2f2f2;
+    }
+    th:hover {
+      background-color: #ddd;
+    }
+    .search-box {
+      margin-bottom: 20px;
+      padding: 10px;
+      width: 300px;
+      font-size: 16px;
+    }
+    nav ul {
+    list-style: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    
+        <nav>
+          <ul>
+            <li><a href="index.html">股票資料查詢</a></li>
+            <li><a href="poke.html">國家資料</a></li>
+            <li><a href="air.html">空氣品質查詢</a></li>
+          </ul>
+        </nav>
+
+    <h1> Countries API</h1>
+    <header>
+  </header>
+  </header>
+  <div class="container">
+    <input type="text" class="search-box" id="search-input" placeholder="Search for a country...">
+    <table id="countries-table">
+      <thead>
+        <tr>
+          <th>Flag</th>
+          <th onclick="sortTable(0)">Country</th>
+          <th onclick="sortTable(1)">Population</th>
+          <th onclick="sortTable(2)">Region</th>
+          <th onclick="sortTable(3)">Capital</th>
+          <th onclick="sortTable(4)">Languages</th>
+        </tr>
+      </thead>
+      <tbody id="countries-container">
+        <tr>
+          <td colspan="6">Loading countries...</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <script src="poke.js"></script>
+</body>
+</html>

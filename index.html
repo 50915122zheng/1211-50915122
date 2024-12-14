@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>股票資料網站</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">股票資料查詢</a></li>
+        <li><a href="poke.html">國家資料</a></li>
+        <li><a href="air.html">空氣品質查詢</a></li>
+      </ul>
+    </nav>
+    <h1>股票資料查詢</h1>
+  </header>
+  <main>
+    <input type="text" id="search-bar" placeholder="輸入股票代碼或名稱">
+    <table id="stock-table">
+        <thead>
+            <tr>
+              <th data-column="Code" data-order="asc">代碼</th>
+              <th data-column="Name" data-order="asc">名稱</th>
+              <th data-column="TradeVolume" data-order="asc">成交量</th>
+              <th data-column="OpeningPrice" data-order="asc">開盤價</th>
+              <th data-column="HighestPrice" data-order="asc">最高價</th>
+              <th data-column="LowestPrice" data-order="asc">最低價</th>
+              <th data-column="ClosingPrice" data-order="asc">收盤價</th>
+              <th data-column="Change" data-order="asc">漲跌</th>
+            </tr>
+          </thead>
+          
+      <tbody>
+        <!-- 股票數據將動態插入 -->
+      </tbody>
+    </table>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
