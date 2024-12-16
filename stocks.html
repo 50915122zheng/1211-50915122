@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>空氣品質查詢</title>
-  <link rel="stylesheet" href="air.css">
+  <title>股票資料網站</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -24,29 +24,30 @@
         </div>
       </div>
     </nav>
-    <h1>空氣品質查詢系統</h1>
+    <h1>股票資料查詢</h1>
   </header>
   <main>
-    <input type="text" id="search-bar" placeholder="輸入測站名稱或縣市">
-    <table id="air-quality-table">
+    <input type="text" id="search-bar" placeholder="輸入股票代碼或名稱">
+    <table id="stock-table">
       <thead>
         <tr>
-          <th data-column="SiteName" data-order="asc">測站名稱</th>
-          <th data-column="County" data-order="asc">縣市</th>
-          <th data-column="AQI" data-order="asc">AQI</th>
-          <th data-column="Status" data-order="asc">空氣品質狀態</th>
-          <th data-column="PM2.5" data-order="asc">PM2.5 (μg/m³)</th>
-          <th data-column="PM10" data-order="asc">PM10 (μg/m³)</th>
-          <th data-column="WindSpeed" data-order="asc">風速 (m/sec)</th>
-          <th data-column="PublishTime" data-order="asc">發布時間</th>
+          <th data-column="Code" data-order="asc">代碼</th>
+          <th data-column="Name" data-order="asc">名稱</th>
+          <th data-column="TradeVolume" data-order="asc">成交量</th>
+          <th data-column="OpeningPrice" data-order="asc">開盤價</th>
+          <th data-column="HighestPrice" data-order="asc">最高價</th>
+          <th data-column="LowestPrice" data-order="asc">最低價</th>
+          <th data-column="ClosingPrice" data-order="asc">收盤價</th>
+          <th data-column="Change" data-order="asc">漲跌</th>
         </tr>
       </thead>
+
       <tbody>
-        <!-- 空氣品質數據將動態插入 -->
+        <!-- 股票數據將動態插入 -->
       </tbody>
     </table>
   </main>
-  <script src="air.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
